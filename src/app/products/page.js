@@ -7,7 +7,11 @@ const products = [
 	{id:3, title: "Third Product"},
 	{id:4, title: "Fourth Product"},
 ]
-const ProductsPage = () => {
+const ProductsPage = ({ params, searchParams }) => {
+	  const query = searchParams.q || '';
+	  console.log("🚀 ~ ProductsPage ~ query:", query)
+  const page = searchParams.page || 1;
+  console.log("🚀 ~ ProductsPage ~ page:", page)
 	return (
 		<div>
 			<h1>Products List</h1>

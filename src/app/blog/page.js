@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BlogList = () => {
+const BlogList = async () => {
 	return (
 		<div>BlogList</div>
 	)

@@ -1,8 +1,8 @@
 'use client';
 
-import { useAuth } from '@/app/store/useAuth';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { useAuth } from '../../store/useAuth';
 
 const Login = () => {
   const { login } = useAuth();
